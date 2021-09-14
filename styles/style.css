@@ -1,7 +1,17 @@
+/* html {
+  min-height: 100%;
+} */
+
+
 body {
   background: linear-gradient(135deg, #022a56, #b8a46c) fixed;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
+  min-height: 100%;
+}
+
+html,body {
+  overflow: auto;
 }
 
 /* Color Stylings */
@@ -15,6 +25,7 @@ body {
 .primary-para-text {
   color: white;
   font-size: larger;
+  text-justify: distribute;
 }
 
 /* Navbar Styling */
@@ -43,6 +54,25 @@ body {
 }
 
 /* Main Content */
+#about-us {
+  /* Fix for bad offset when clicking href */
+  scroll-margin-top: 80px;
+}
+
+#faq {
+  scroll-margin-top: 70px;
+}
+
+
+#footer {
+  background-color: #022a56;
+  height: 20px;
+  bottom: 0;
+}
+
+
+
+
 /* #practice-container {
   max-width: 1200px;
 } */
