@@ -1,7 +1,61 @@
 /* html {
   min-height: 100%;
 } */
+/* .w-100 {
+  width: 100% !important;
+  height: 75vh;
+} */
+/* 
+#main-carousel {
+  width: 100%;
+  height: 95px;
+} */
 
+/* .carousel .item img {
+  max-height: 1024px;
+  min-width: auto;
+} */
+
+/* .carousel-container {
+  margin-top: 500px;
+} */
+/* .carousel {
+  /* position: absolute; */
+  /* top: 50px; */
+/* } */ 
+
+
+/* .carousel-inner > .carousel-item > img {
+  margin: auto;
+
+  position: relative;
+  top: 5%;
+  transform: translateY(-100%);
+} */
+
+#carousel-container {
+  /* position: relative; */
+  margin-top: 60px;
+}
+
+.carousel-inner > .carousel-item {
+  max-height: 800px;
+}
+
+.carousel-inner img {
+  margin: auto;
+  top: 10%;
+  position: relative;
+  /* transform: translateY(-5%); */
+  
+}
+
+
+
+
+/* #carousel-container {
+  max-height: 500px;
+} */
 
 body {
   background: linear-gradient(135deg, #022a56, #b8a46c) fixed;
@@ -32,6 +86,8 @@ html,body {
 #navbar {
   background-image: linear-gradient(to bottom, #022a56, #b3b5b8);
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  /* margin-bottom: 200px; */
+  
 }
 
 #navbar a {
@@ -94,7 +150,66 @@ html,body {
 
 
 /* Media Queries */
-/* Styling for screens smaller than  */
+
+
+/* Media Queries to adjust carousel height and img pos */
+
+/* 2160p vertical */
+@media only screen and (max-height: 2160px) {
+  .carousel-inner > .carousel-item {
+    max-height: 1400px;
+  }
+  .carousel-inner img {
+    transform: translateY(-18%);
+  }
+}
+
+/* 1440p vertical */
+@media only screen and (max-height: 1440px) {
+  .carousel-inner > .carousel-item {
+    max-height: 1000px;
+  }
+
+  @media only screen and (max-width: 3440px) {
+    .carousel-inner img {
+      transform: translateY(-22%);
+    }
+  }
+
+  @media only screen and (max-width: 2560px) {
+    .carousel-inner img {
+      transform: translateY(-20%);
+    }
+  }
+
+}
+
+/* 1080p vertical */
+@media only screen and (max-height: 1080px) {
+  .carousel-inner > .carousel-item {
+    max-height: 760px;
+  }
+
+  @media only screen and (max-width: 2560px) {
+    .carousel-inner img {
+      transform: translateY(-15%);
+    }
+  }
+  
+  @media only screen and (max-width: 1920px) {
+    .carousel-inner img {
+      transform: translateY(-10%);
+    }
+  }
+
+  @media only screen and (max-width: 300px) {
+    .carousel-inner img {
+      transform: translateY(-3%);
+    }
+  }
+  
+}
+
 
 /* Styling for phones */
 @media only screen and (max-width: 576px) {
@@ -104,13 +219,16 @@ html,body {
   h2 {
     font-size: larger;
   }
+  h4 {
+    font-size: medium;
+  }
   .practice-info-container {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
   }
 
   .primary-para-text {
-    font-size: medium;
+    font-size: small;
   }
   #navbar > a > img {
     width: 80px;
