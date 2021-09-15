@@ -113,10 +113,24 @@ html,body {
 #about-us {
   /* Fix for bad offset when clicking href */
   scroll-margin-top: 80px;
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
 
 #faq {
   scroll-margin-top: 70px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+#faq a {
+  text-decoration: underline;
+}
+#faq a:link {
+  color: white;
+}
+#faq a:visited {
+  color: white;
 }
 
 
@@ -222,19 +236,53 @@ html,body {
   h4 {
     font-size: medium;
   }
-  .practice-info-container {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
 
   .primary-para-text {
     font-size: small;
   }
+
   #navbar > a > img {
     width: 80px;
   }
   #practice-icon-container, #faq-container {
     flex-direction: column;
   }
+
+  .far {
+    font-size: 3.5em;
+  }
+
+  .far::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    width: 1em;
+    height: 1em;
+    background: #b8a46c;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+    border: black;
+  }
+
+  #about-us, #faq {
+    /* Fix for bad offset when clicking href */
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  
+  /* #faq {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  } */
+
+  .practice-info-container {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+
+
+  
+  
  
 }
