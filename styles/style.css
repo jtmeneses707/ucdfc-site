@@ -64,9 +64,9 @@ body {
   min-height: 100%;
 }
 
-html,body {
+/* html,body {
   overflow: auto;
-}
+} */
 
 /* Color Stylings */
 .primary-bold-text {
@@ -110,6 +110,15 @@ html,body {
 }
 
 /* Main Content */
+#main-carousel {
+  scroll-margin-top: 80px;
+}
+
+
+#practice-info {
+  scroll-margin-top: 80px;
+}
+
 #about-us {
   /* Fix for bad offset when clicking href */
   scroll-margin-top: 80px;
@@ -123,21 +132,21 @@ html,body {
   margin-bottom: 200px;
 }
 
-#faq a {
+#faq a, .mailing-container a {
   text-decoration: underline;
 }
-#faq a:link {
+#faq a:link, .mailing-container a:link {
   color: white;
 }
-#faq a:visited {
+#faq a:visited, .mailing-container a:visited {
   color: white;
 }
 
 
 #footer {
-  background-color: #022a56;
-  height: 20px;
-  bottom: 0;
+  background-image: linear-gradient(to top, #022a56, #b3b5b8);
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  height: 150px;
 }
 
 
@@ -269,15 +278,14 @@ html,body {
     margin-top: 100px;
     margin-bottom: 100px;
   }
-  
-  /* #faq {
-    margin-top: 100px;
-    margin-bottom: 100px;
-  } */
 
   .practice-info-container {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+  }
+
+  #footer {
+    height: 80px;
   }
 
 
